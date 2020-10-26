@@ -1,2 +1,2 @@
 # gradient-tiles
-Gradient Tiles I developed in SASS, with minor CSS tweaks
+Gradient Tiles developed in SASS, with minor CSS tweaks
