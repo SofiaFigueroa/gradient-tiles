@@ -25,6 +25,7 @@
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5), 2px 2px 8px black;
 }
 
+
 .grid-container .gallery {
   -webkit-transition: -webkit-transform 0.2s ease-out;
   transition: -webkit-transform 0.2s ease-out;
@@ -39,6 +40,26 @@
     to(black)
   );
   background-image: linear-gradient(#daa900, #4a3e12, black);
+  height: inherit;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.gallery:nth-child(2n)  {
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#004cda),
+    color-stop(#12264a),
+    to(black)
+  );
+  background-image: linear-gradient(#004cda,#12264a, black);
   height: inherit;
   overflow: hidden;
   -webkit-box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
@@ -62,6 +83,7 @@
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
+
 
 .grid-container .gallery img:hover {
   opacity: 60%;
